@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ShopVisor sign-in test</title>
+<style>
+  :root { --ink: #1d2433; --muted: #5b6475; --rule: #d9dde5; --ground: #fbfbfd; --mark: #2f5d8a; }
+  @media (prefers-color-scheme: dark) { :root { --ink: #e6e9ef; --muted: #a3abba; --rule: #343a46; --ground: #15181e; --mark: #8db4dc; } }
+  body { margin: 0; background: var(--ground); color: var(--ink); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 40rem; margin: 0 auto; padding: 2.5rem 1rem 4rem; }
+  h1 { font-size: 1.6rem; line-height: 1.25; margin: 0 0 .25rem; text-wrap: balance; }
+  h2 { font-size: 1.1rem; margin: 2rem 0 .5rem; }
+  .note { color: var(--muted); border-left: 3px solid var(--mark); padding-left: .75rem; }
+  code { font: .95em ui-monospace, "Cascadia Mono", Consolas, monospace; overflow-wrap: anywhere; }
+  a { color: var(--mark); }
+  ol li { margin: .35rem 0; }
+</style>
+</head>
+<body>
+<main>
+  <h1>ShopVisor sign-in test</h1>
+  <p class="note">This is a test service for ShopVisor's sign-in, used by ShopVisor's own testers. It is not
+  the ShopVisor product, and nothing done here is kept.</p>
+
+  <h2>Add the connector</h2>
+  <ol>
+    <li>In <strong>Claude</strong> (claude.ai, in a desktop browser): Settings, then Connectors, then
+      add a custom connector.<br>In <strong>ChatGPT</strong> (chatgpt.com, in a desktop browser): Settings,
+      then Apps and connectors, then create a connector.</li>
+    <li>Give it this address: <code>https://shopvisor-signin-spike-704240202919.us-central1.run.app/mcp</code></li>
+    <li>When the sign-in window opens, enter your email address, then the code we email you.</li>
+    <li>Approve what the assistant asks to do.</li>
+  </ol>
+
+  <h2>Add a passkey</h2>
+  <p>See <a href="passkey/">adding a passkey</a>.</p>
+
+  <h2>Help</h2>
+  <p>Write to <a href="mailto:d@ShopVisor.ai">d@ShopVisor.ai</a>.</p>
+</main>
+</body>
+</html>
